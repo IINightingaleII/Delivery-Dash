@@ -1,0 +1,4 @@
+repository "Delivery Dash 2025-12-01_18-08-58/Delivery Dash@20067457811537@cloud"
+  path "/"
+    br "/main"
+    co "/main"
