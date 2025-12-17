@@ -1,4 +1,3 @@
-using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using TMPro;
@@ -12,12 +11,12 @@ public class Driver : MonoBehaviour
 
     [SerializeField] TMP_Text boostText;
 
-    void start()
+    void Start()
     {
         boostText.gameObject.SetActive(false);
     }
 
-    void onTriggerEnter2D(Collider2D collision)
+    void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.CompareTag("Boost"))
         {
@@ -36,36 +35,29 @@ public class Driver : MonoBehaviour
         }
     }
 
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-
-    // Update is called once per frame
     void Update()
     {
-        float steer = 0f;
         float move = 0f;
+        float steer = 0f;
 
         if (Keyboard.current.wKey.isPressed)
         {
             move = 1f;
-            Debug.Log("W key is pressed");
         }
 
         else if (Keyboard.current.sKey.isPressed)
         {
             move = -1f;
-            Debug.Log("S key is pressed");
         }
-        if (Keyboard.current.aKey.isPressed)
 
+        if (Keyboard.current.aKey.isPressed)
         {
             steer = 1f;
-            Debug.Log("A key is pressed");
         }
 
         else if (Keyboard.current.dKey.isPressed)
         {
             steer = -1f;
-            Debug.Log("D key is pressed");
         }
 
         float moveAmount = move * currentSpeed * Time.deltaTime;
@@ -73,6 +65,5 @@ public class Driver : MonoBehaviour
 
         transform.Translate(0, moveAmount, 0);
         transform.Rotate(0, 0, steerAmount);
-        //transform.Translate(0, 0, 1);
     }
 }

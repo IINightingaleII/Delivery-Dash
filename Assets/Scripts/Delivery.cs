@@ -5,7 +5,7 @@ public class Delivery : MonoBehaviour
     bool hasPackage;
     [SerializeField] float delay = 1f;
 
-    void onTriggerEnter2D(Collider2D collision)
+    void OnTriggerEnter2D(Collider2D collision)
     {
         // if (the tag is package)
         // then (print picked up package to console)
