@@ -1,0 +1,20 @@
+{
+    "asset": "b07f71bca6239f949ae795659f90ff95",
+    "fileName": "019b2cb6-37d6-7a05-9937-c44d85b6cda8.png",
+    "prompt": "Boost Item prefab sprite that slowly gets smaller with red shader",
+    "negativePrompt": "",
+    "model": "5b5b2af1-6ea4-4266-b087-cc9f3bf4f450",
+    "modelName": "Flux.1 Dev",
+    "customSeed": -1,
+    "w3CTraceId": "231a5cded9a6757511be02e0cffeeda7",
+    "refinementMode": "Generation",
+    "pixelateTargetSize": 0,
+    "pixelateKeepImageSize": false,
+    "pixelatePixelBlockSize": 0,
+    "pixelateMode": 0,
+    "pixelateOutlineThickness": 0,
+    "doodles": {
+        "m_Items": []
+    },
+    "upscaleFactor": 0
+}
